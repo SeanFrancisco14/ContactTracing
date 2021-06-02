@@ -37,6 +37,10 @@ namespace ContactTracing
             this.title_label = new System.Windows.Forms.Label();
             this.OK_button = new System.Windows.Forms.Button();
             this.information_TextBox = new System.Windows.Forms.TextBox();
+            this.name_Input = new System.Windows.Forms.Label();
+            this.age_Input = new System.Windows.Forms.Label();
+            this.contact_Input = new System.Windows.Forms.Label();
+            this.address_Input = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // info_Label
@@ -52,36 +56,40 @@ namespace ContactTracing
             // name_Label
             // 
             this.name_Label.AutoSize = true;
+            this.name_Label.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.name_Label.Location = new System.Drawing.Point(12, 112);
             this.name_Label.Name = "name_Label";
-            this.name_Label.Size = new System.Drawing.Size(46, 17);
+            this.name_Label.Size = new System.Drawing.Size(55, 21);
             this.name_Label.TabIndex = 1;
             this.name_Label.Text = "Name:";
             // 
             // age_Label
             // 
             this.age_Label.AutoSize = true;
+            this.age_Label.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.age_Label.Location = new System.Drawing.Point(12, 138);
             this.age_Label.Name = "age_Label";
-            this.age_Label.Size = new System.Drawing.Size(34, 17);
+            this.age_Label.Size = new System.Drawing.Size(40, 21);
             this.age_Label.TabIndex = 2;
             this.age_Label.Text = "Age:";
             // 
             // contact_Label
             // 
             this.contact_Label.AutoSize = true;
+            this.contact_Label.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.contact_Label.Location = new System.Drawing.Point(11, 165);
             this.contact_Label.Name = "contact_Label";
-            this.contact_Label.Size = new System.Drawing.Size(107, 17);
+            this.contact_Label.Size = new System.Drawing.Size(128, 21);
             this.contact_Label.TabIndex = 3;
             this.contact_Label.Text = "Contact Number:";
             // 
             // address_Label
             // 
             this.address_Label.AutoSize = true;
+            this.address_Label.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.address_Label.Location = new System.Drawing.Point(12, 194);
             this.address_Label.Name = "address_Label";
-            this.address_Label.Size = new System.Drawing.Size(59, 17);
+            this.address_Label.Size = new System.Drawing.Size(69, 21);
             this.address_Label.TabIndex = 4;
             this.address_Label.Text = "Address:";
             // 
@@ -103,6 +111,7 @@ namespace ContactTracing
             this.OK_button.TabIndex = 6;
             this.OK_button.Text = "OK";
             this.OK_button.UseVisualStyleBackColor = true;
+            this.OK_button.Click += new System.EventHandler(this.OK_button_Click);
             // 
             // information_TextBox
             // 
@@ -111,11 +120,59 @@ namespace ContactTracing
             this.information_TextBox.Size = new System.Drawing.Size(100, 25);
             this.information_TextBox.TabIndex = 7;
             // 
+            // name_Input
+            // 
+            this.name_Input.AutoSize = true;
+            this.name_Input.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.name_Input.Location = new System.Drawing.Point(184, 112);
+            this.name_Input.Name = "name_Input";
+            this.name_Input.Size = new System.Drawing.Size(52, 21);
+            this.name_Input.TabIndex = 8;
+            this.name_Input.Text = "label1";
+            this.name_Input.Click += new System.EventHandler(this.name_Input_Click);
+            // 
+            // age_Input
+            // 
+            this.age_Input.AutoSize = true;
+            this.age_Input.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.age_Input.Location = new System.Drawing.Point(184, 138);
+            this.age_Input.Name = "age_Input";
+            this.age_Input.Size = new System.Drawing.Size(52, 21);
+            this.age_Input.TabIndex = 9;
+            this.age_Input.Text = "label2";
+            this.age_Input.Click += new System.EventHandler(this.age_Input_Click);
+            // 
+            // contact_Input
+            // 
+            this.contact_Input.AutoSize = true;
+            this.contact_Input.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.contact_Input.Location = new System.Drawing.Point(184, 165);
+            this.contact_Input.Name = "contact_Input";
+            this.contact_Input.Size = new System.Drawing.Size(52, 21);
+            this.contact_Input.TabIndex = 10;
+            this.contact_Input.Text = "label3";
+            this.contact_Input.Click += new System.EventHandler(this.contact_Input_Click);
+            // 
+            // address_Input
+            // 
+            this.address_Input.AutoSize = true;
+            this.address_Input.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.address_Input.Location = new System.Drawing.Point(184, 194);
+            this.address_Input.Name = "address_Input";
+            this.address_Input.Size = new System.Drawing.Size(52, 21);
+            this.address_Input.TabIndex = 11;
+            this.address_Input.Text = "label4";
+            this.address_Input.Click += new System.EventHandler(this.address_Input_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.address_Input);
+            this.Controls.Add(this.contact_Input);
+            this.Controls.Add(this.age_Input);
+            this.Controls.Add(this.name_Input);
             this.Controls.Add(this.information_TextBox);
             this.Controls.Add(this.OK_button);
             this.Controls.Add(this.title_label);
@@ -142,6 +199,10 @@ namespace ContactTracing
         private System.Windows.Forms.Label title_label;
         private System.Windows.Forms.Button OK_button;
         private System.Windows.Forms.TextBox information_TextBox;
+        private System.Windows.Forms.Label name_Input;
+        private System.Windows.Forms.Label age_Input;
+        private System.Windows.Forms.Label contact_Input;
+        private System.Windows.Forms.Label address_Input;
     }
 }
 
