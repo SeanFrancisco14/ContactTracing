@@ -127,5 +127,11 @@ namespace ContactTracing
             outputFile.WriteLine("Has been in contact with other people:" + incontact_Input.Text);
             outputFile.Close();
         }
+
+        private void help_Button_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("OK - prints typed information unto current field and moves to the next one" + "\r\n"
+                + "Clear - deletes all text on fields" + "\r\n" + "Confirm - confirms all information added" + "\r\n");
+        }
     }
 }
