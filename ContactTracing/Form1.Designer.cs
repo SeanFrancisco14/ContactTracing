@@ -130,9 +130,8 @@ namespace ContactTracing
             this.name_Input.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.name_Input.Location = new System.Drawing.Point(196, 113);
             this.name_Input.Name = "name_Input";
-            this.name_Input.Size = new System.Drawing.Size(63, 25);
+            this.name_Input.Size = new System.Drawing.Size(0, 25);
             this.name_Input.TabIndex = 8;
-            this.name_Input.Text = "label1";
             this.name_Input.Click += new System.EventHandler(this.name_Input_Click);
             // 
             // age_Input
@@ -141,9 +140,8 @@ namespace ContactTracing
             this.age_Input.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.age_Input.Location = new System.Drawing.Point(196, 138);
             this.age_Input.Name = "age_Input";
-            this.age_Input.Size = new System.Drawing.Size(63, 25);
+            this.age_Input.Size = new System.Drawing.Size(0, 25);
             this.age_Input.TabIndex = 9;
-            this.age_Input.Text = "label2";
             this.age_Input.Click += new System.EventHandler(this.age_Input_Click);
             // 
             // contact_Input
@@ -152,9 +150,8 @@ namespace ContactTracing
             this.contact_Input.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.contact_Input.Location = new System.Drawing.Point(196, 165);
             this.contact_Input.Name = "contact_Input";
-            this.contact_Input.Size = new System.Drawing.Size(63, 25);
+            this.contact_Input.Size = new System.Drawing.Size(0, 25);
             this.contact_Input.TabIndex = 10;
-            this.contact_Input.Text = "label3";
             this.contact_Input.Click += new System.EventHandler(this.contact_Input_Click);
             // 
             // address_Input
@@ -163,9 +160,8 @@ namespace ContactTracing
             this.address_Input.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.address_Input.Location = new System.Drawing.Point(196, 194);
             this.address_Input.Name = "address_Input";
-            this.address_Input.Size = new System.Drawing.Size(63, 25);
+            this.address_Input.Size = new System.Drawing.Size(0, 25);
             this.address_Input.TabIndex = 11;
-            this.address_Input.Text = "label4";
             this.address_Input.Click += new System.EventHandler(this.address_Input_Click);
             // 
             // clear_Button
@@ -194,9 +190,9 @@ namespace ContactTracing
             this.incontact_Label.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.incontact_Label.Location = new System.Drawing.Point(12, 219);
             this.incontact_Label.Name = "incontact_Label";
-            this.incontact_Label.Size = new System.Drawing.Size(464, 25);
+            this.incontact_Label.Size = new System.Drawing.Size(468, 25);
             this.incontact_Label.TabIndex = 14;
-            this.incontact_Label.Text = "Have you been in contact with other people? (Yes/No)";
+            this.incontact_Label.Text = "Have you been in contact with other people?: (Yes/No)";
             // 
             // incontact_Input
             // 
@@ -204,9 +200,8 @@ namespace ContactTracing
             this.incontact_Input.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.incontact_Input.Location = new System.Drawing.Point(482, 219);
             this.incontact_Input.Name = "incontact_Input";
-            this.incontact_Input.Size = new System.Drawing.Size(63, 25);
+            this.incontact_Input.Size = new System.Drawing.Size(0, 25);
             this.incontact_Input.TabIndex = 15;
-            this.incontact_Input.Text = "label1";
             // 
             // Form1
             // 

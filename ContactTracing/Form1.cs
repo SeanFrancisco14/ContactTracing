@@ -78,23 +78,23 @@ namespace ContactTracing
 
         public void infoConfirmation()
         {
-            if (name_Input.Text.Contains(""))
+            if (name_Input.Text.Length == 0)
             {
                 MessageBox.Show("Insufficient information provided, please fill out all fields!");
             }
-            else if (age_Input.Text.Contains(""))
+            else if (age_Input.Text.Length == 0)
             {
                 MessageBox.Show("Insufficient information provided, please fill out all fields!");
             }
-            else if (contact_Input.Text.Contains(""))
+            else if (contact_Input.Text.Length == 0)
             {
                 MessageBox.Show("Insufficient information provided, please fill out all fields!");
             }
-            else if (address_Input.Text.Contains(""))
+            else if (address_Input.Text.Length == 0)
             {
                 MessageBox.Show("Insufficient information provided, please fill out all fields!");
             }
-            else if (incontact_Input.Text.Contains(""))
+            else if (incontact_Input.Text.Length == 0)
             {
                 MessageBox.Show("Insufficient information provided, please fill out all fields!");
             }
@@ -102,7 +102,6 @@ namespace ContactTracing
 
         private void confirm_Button_Click(object sender, EventArgs e)
         {
-            infoConfirmation();
 
             if (incontact_Input.Text.Contains("e"))
                 {
@@ -116,7 +115,9 @@ namespace ContactTracing
                    + "Your contact number is " + contact_Input.Text + " and your address is " + address_Input.Text + "\r\n" +
                      "You have not been in contact with others.");
                 }
-            
+
+            infoConfirmation();
+
             StreamWriter outputFile;
             outputFile = File.AppendText("output.txt");
             outputFile.WriteLine("Name: " + name_Input.Text);
