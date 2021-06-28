@@ -46,13 +46,18 @@ namespace ContactTracing
             this.incontact_Label = new System.Windows.Forms.Label();
             this.incontact_Input = new System.Windows.Forms.Label();
             this.help_Button = new System.Windows.Forms.Button();
+            this.pnl1 = new System.Windows.Forms.Panel();
+            this.pnl2 = new System.Windows.Forms.Panel();
+            this.exit_Button = new System.Windows.Forms.Button();
+            this.pnl1.SuspendLayout();
+            this.pnl2.SuspendLayout();
             this.SuspendLayout();
             // 
             // info_Label
             // 
             this.info_Label.AutoSize = true;
             this.info_Label.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.info_Label.Location = new System.Drawing.Point(6, 73);
+            this.info_Label.Location = new System.Drawing.Point(3, 123);
             this.info_Label.Name = "info_Label";
             this.info_Label.Size = new System.Drawing.Size(206, 32);
             this.info_Label.TabIndex = 0;
@@ -62,7 +67,7 @@ namespace ContactTracing
             // 
             this.name_Label.AutoSize = true;
             this.name_Label.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.name_Label.Location = new System.Drawing.Point(12, 112);
+            this.name_Label.Location = new System.Drawing.Point(9, 162);
             this.name_Label.Name = "name_Label";
             this.name_Label.Size = new System.Drawing.Size(66, 25);
             this.name_Label.TabIndex = 1;
@@ -72,7 +77,7 @@ namespace ContactTracing
             // 
             this.age_Label.AutoSize = true;
             this.age_Label.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.age_Label.Location = new System.Drawing.Point(12, 138);
+            this.age_Label.Location = new System.Drawing.Point(9, 188);
             this.age_Label.Name = "age_Label";
             this.age_Label.Size = new System.Drawing.Size(49, 25);
             this.age_Label.TabIndex = 2;
@@ -82,7 +87,7 @@ namespace ContactTracing
             // 
             this.contact_Label.AutoSize = true;
             this.contact_Label.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.contact_Label.Location = new System.Drawing.Point(11, 165);
+            this.contact_Label.Location = new System.Drawing.Point(8, 215);
             this.contact_Label.Name = "contact_Label";
             this.contact_Label.Size = new System.Drawing.Size(155, 25);
             this.contact_Label.TabIndex = 3;
@@ -92,7 +97,7 @@ namespace ContactTracing
             // 
             this.address_Label.AutoSize = true;
             this.address_Label.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.address_Label.Location = new System.Drawing.Point(12, 194);
+            this.address_Label.Location = new System.Drawing.Point(9, 244);
             this.address_Label.Name = "address_Label";
             this.address_Label.Size = new System.Drawing.Size(83, 25);
             this.address_Label.TabIndex = 4;
@@ -102,7 +107,7 @@ namespace ContactTracing
             // 
             this.title_label.AutoSize = true;
             this.title_label.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.title_label.Location = new System.Drawing.Point(140, 9);
+            this.title_label.Location = new System.Drawing.Point(7, 20);
             this.title_label.Name = "title_label";
             this.title_label.Size = new System.Drawing.Size(308, 45);
             this.title_label.TabIndex = 5;
@@ -110,7 +115,7 @@ namespace ContactTracing
             // 
             // OK_button
             // 
-            this.OK_button.Location = new System.Drawing.Point(20, 374);
+            this.OK_button.Location = new System.Drawing.Point(10, 45);
             this.OK_button.Name = "OK_button";
             this.OK_button.Size = new System.Drawing.Size(75, 23);
             this.OK_button.TabIndex = 6;
@@ -120,17 +125,17 @@ namespace ContactTracing
             // 
             // information_TextBox
             // 
-            this.information_TextBox.Location = new System.Drawing.Point(83, 343);
+            this.information_TextBox.Location = new System.Drawing.Point(91, 14);
             this.information_TextBox.Name = "information_TextBox";
-            this.information_TextBox.Size = new System.Drawing.Size(197, 25);
+            this.information_TextBox.Size = new System.Drawing.Size(239, 25);
             this.information_TextBox.TabIndex = 7;
             // 
             // name_Input
             // 
             this.name_Input.AutoSize = true;
             this.name_Input.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.name_Input.ForeColor = System.Drawing.Color.Aqua;
-            this.name_Input.Location = new System.Drawing.Point(196, 113);
+            this.name_Input.ForeColor = System.Drawing.Color.Lime;
+            this.name_Input.Location = new System.Drawing.Point(193, 163);
             this.name_Input.Name = "name_Input";
             this.name_Input.Size = new System.Drawing.Size(0, 25);
             this.name_Input.TabIndex = 8;
@@ -140,8 +145,8 @@ namespace ContactTracing
             // 
             this.age_Input.AutoSize = true;
             this.age_Input.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.age_Input.ForeColor = System.Drawing.Color.Aqua;
-            this.age_Input.Location = new System.Drawing.Point(196, 138);
+            this.age_Input.ForeColor = System.Drawing.Color.Lime;
+            this.age_Input.Location = new System.Drawing.Point(193, 188);
             this.age_Input.Name = "age_Input";
             this.age_Input.Size = new System.Drawing.Size(0, 25);
             this.age_Input.TabIndex = 9;
@@ -151,8 +156,8 @@ namespace ContactTracing
             // 
             this.contact_Input.AutoSize = true;
             this.contact_Input.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.contact_Input.ForeColor = System.Drawing.Color.Aqua;
-            this.contact_Input.Location = new System.Drawing.Point(196, 165);
+            this.contact_Input.ForeColor = System.Drawing.Color.Lime;
+            this.contact_Input.Location = new System.Drawing.Point(193, 215);
             this.contact_Input.Name = "contact_Input";
             this.contact_Input.Size = new System.Drawing.Size(0, 25);
             this.contact_Input.TabIndex = 10;
@@ -162,8 +167,8 @@ namespace ContactTracing
             // 
             this.address_Input.AutoSize = true;
             this.address_Input.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.address_Input.ForeColor = System.Drawing.Color.Aqua;
-            this.address_Input.Location = new System.Drawing.Point(196, 194);
+            this.address_Input.ForeColor = System.Drawing.Color.Lime;
+            this.address_Input.Location = new System.Drawing.Point(193, 244);
             this.address_Input.Name = "address_Input";
             this.address_Input.Size = new System.Drawing.Size(0, 25);
             this.address_Input.TabIndex = 11;
@@ -171,7 +176,7 @@ namespace ContactTracing
             // 
             // clear_Button
             // 
-            this.clear_Button.Location = new System.Drawing.Point(101, 374);
+            this.clear_Button.Location = new System.Drawing.Point(91, 45);
             this.clear_Button.Name = "clear_Button";
             this.clear_Button.Size = new System.Drawing.Size(75, 23);
             this.clear_Button.TabIndex = 12;
@@ -181,7 +186,7 @@ namespace ContactTracing
             // 
             // confirm_Button
             // 
-            this.confirm_Button.Location = new System.Drawing.Point(184, 374);
+            this.confirm_Button.Location = new System.Drawing.Point(174, 45);
             this.confirm_Button.Name = "confirm_Button";
             this.confirm_Button.Size = new System.Drawing.Size(75, 23);
             this.confirm_Button.TabIndex = 13;
@@ -193,7 +198,7 @@ namespace ContactTracing
             // 
             this.incontact_Label.AutoSize = true;
             this.incontact_Label.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.incontact_Label.Location = new System.Drawing.Point(12, 219);
+            this.incontact_Label.Location = new System.Drawing.Point(9, 269);
             this.incontact_Label.Name = "incontact_Label";
             this.incontact_Label.Size = new System.Drawing.Size(468, 25);
             this.incontact_Label.TabIndex = 14;
@@ -202,17 +207,17 @@ namespace ContactTracing
             // incontact_Input
             // 
             this.incontact_Input.AutoSize = true;
-            this.incontact_Input.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.incontact_Input.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.incontact_Input.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.incontact_Input.ForeColor = System.Drawing.Color.Aqua;
-            this.incontact_Input.Location = new System.Drawing.Point(482, 219);
+            this.incontact_Input.ForeColor = System.Drawing.Color.Lime;
+            this.incontact_Input.Location = new System.Drawing.Point(479, 269);
             this.incontact_Input.Name = "incontact_Input";
             this.incontact_Input.Size = new System.Drawing.Size(0, 25);
             this.incontact_Input.TabIndex = 15;
             // 
             // help_Button
             // 
-            this.help_Button.Location = new System.Drawing.Point(265, 374);
+            this.help_Button.Location = new System.Drawing.Point(255, 45);
             this.help_Button.Name = "help_Button";
             this.help_Button.Size = new System.Drawing.Size(75, 23);
             this.help_Button.TabIndex = 16;
@@ -220,24 +225,55 @@ namespace ContactTracing
             this.help_Button.UseVisualStyleBackColor = true;
             this.help_Button.Click += new System.EventHandler(this.help_Button_Click);
             // 
+            // pnl1
+            // 
+            this.pnl1.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.pnl1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pnl1.Controls.Add(this.title_label);
+            this.pnl1.Location = new System.Drawing.Point(81, 12);
+            this.pnl1.Name = "pnl1";
+            this.pnl1.Size = new System.Drawing.Size(322, 100);
+            this.pnl1.TabIndex = 17;
+            // 
+            // pnl2
+            // 
+            this.pnl2.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.pnl2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pnl2.Controls.Add(this.exit_Button);
+            this.pnl2.Controls.Add(this.information_TextBox);
+            this.pnl2.Controls.Add(this.OK_button);
+            this.pnl2.Controls.Add(this.help_Button);
+            this.pnl2.Controls.Add(this.clear_Button);
+            this.pnl2.Controls.Add(this.confirm_Button);
+            this.pnl2.Location = new System.Drawing.Point(34, 297);
+            this.pnl2.Name = "pnl2";
+            this.pnl2.Size = new System.Drawing.Size(424, 83);
+            this.pnl2.TabIndex = 18;
+            // 
+            // exit_Button
+            // 
+            this.exit_Button.Location = new System.Drawing.Point(336, 45);
+            this.exit_Button.Name = "exit_Button";
+            this.exit_Button.Size = new System.Drawing.Size(75, 23);
+            this.exit_Button.TabIndex = 19;
+            this.exit_Button.Text = "Exit";
+            this.exit_Button.UseVisualStyleBackColor = true;
+            this.exit_Button.Click += new System.EventHandler(this.exit_Button_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(570, 409);
-            this.Controls.Add(this.help_Button);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(535, 394);
+            this.Controls.Add(this.pnl2);
+            this.Controls.Add(this.pnl1);
             this.Controls.Add(this.incontact_Input);
             this.Controls.Add(this.incontact_Label);
-            this.Controls.Add(this.confirm_Button);
-            this.Controls.Add(this.clear_Button);
             this.Controls.Add(this.address_Input);
             this.Controls.Add(this.contact_Input);
             this.Controls.Add(this.age_Input);
             this.Controls.Add(this.name_Input);
-            this.Controls.Add(this.information_TextBox);
-            this.Controls.Add(this.OK_button);
-            this.Controls.Add(this.title_label);
             this.Controls.Add(this.address_Label);
             this.Controls.Add(this.contact_Label);
             this.Controls.Add(this.age_Label);
@@ -246,6 +282,11 @@ namespace ContactTracing
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Contact Tracing App";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.pnl1.ResumeLayout(false);
+            this.pnl1.PerformLayout();
+            this.pnl2.ResumeLayout(false);
+            this.pnl2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -270,6 +311,9 @@ namespace ContactTracing
         private System.Windows.Forms.Label incontact_Label;
         private System.Windows.Forms.Label incontact_Input;
         private System.Windows.Forms.Button help_Button;
+        private System.Windows.Forms.Panel pnl1;
+        private System.Windows.Forms.Panel pnl2;
+        private System.Windows.Forms.Button exit_Button;
     }
 }
 

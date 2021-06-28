@@ -15,6 +15,22 @@ namespace ContactTracing
     {
         byte counter = 1;
 
+        public void checkContact() 
+        {
+            if (incontact_Input.Text.Contains("e"))
+            {
+                MessageBox.Show("Hello " + name_Input.Text + "," + " you are : " + age_Input.Text + " years old. " + "\r\n"
+                + "Your contact number is " + contact_Input.Text + " and your address is " + address_Input.Text + "\r\n" +
+                  "You have been in contact with others.");
+            }
+            else if (incontact_Input.Text.Contains("o"))
+            {
+                MessageBox.Show("Hello " + name_Input.Text + "," + " you are : " + age_Input.Text + " years old. " + "\r\n"
+               + "Your contact number is " + contact_Input.Text + " and your address is " + address_Input.Text + "\r\n" +
+                 "You have not been in contact with others.");
+            }
+        }
+
         public Form1()
         {
             InitializeComponent();
@@ -74,6 +90,7 @@ namespace ContactTracing
             contact_Input.Text = "";
             address_Input.Text = "";
             incontact_Input.Text = "";
+            information_TextBox.Text = "";
         }
 
         public void infoConfirmation()
@@ -102,20 +119,7 @@ namespace ContactTracing
 
         private void confirm_Button_Click(object sender, EventArgs e)
         {
-
-            if (incontact_Input.Text.Contains("e"))
-                {
-                    MessageBox.Show("Hello " + name_Input.Text + "," + " you are : " + age_Input.Text + " years old. " + "\r\n"
-                    + "Your contact number is " + contact_Input.Text + " and your address is " + address_Input.Text + "\r\n" +
-                      "You have been in contact with others.");
-                }
-                else if (incontact_Input.Text.Contains("o"))
-                {
-                    MessageBox.Show("Hello " + name_Input.Text + "," + " you are : " + age_Input.Text + " years old. " + "\r\n"
-                   + "Your contact number is " + contact_Input.Text + " and your address is " + address_Input.Text + "\r\n" +
-                     "You have not been in contact with others.");
-                }
-
+            checkContact();
             infoConfirmation();
 
             StreamWriter outputFile;
@@ -132,6 +136,16 @@ namespace ContactTracing
         {
             MessageBox.Show("OK - prints typed information unto current field and moves to the next one" + "\r\n"
                 + "Clear - deletes all text on fields" + "\r\n" + "Confirm - confirms all information added" + "\r\n");
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void exit_Button_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
