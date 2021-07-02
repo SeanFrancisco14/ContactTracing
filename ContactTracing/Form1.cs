@@ -15,50 +15,53 @@ namespace ContactTracing
     {
         byte counter = 1;
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
         public void checkContact() 
         {
-            if (incontact_Input.Text.Contains("e"))
+            if (lbl_HadContactInput.Text.Contains("e"))
             {
-                MessageBox.Show("Hello " + name_Input.Text + "," + " you are : " + age_Input.Text + " years old. " + "\r\n"
-                + "Your contact number is " + contact_Input.Text + " and your address is " + address_Input.Text + "\r\n" +
+                MessageBox.Show("Response recorded" + "\r\n" + "Hello " + lbl_nameInput.Text + "," + " you are : " + lbl_ageInput.Text + " years old. " + "\r\n"
+                + "Your contact number is " + lbl_contactNoInput.Text + " and your address is " + lbl_addressInput.Text + "\r\n" +
                   "You have been in contact with others.");
             }
-            else if (incontact_Input.Text.Contains("o"))
+            else if (lbl_HadContactInput.Text.Contains("o"))
             {
-                MessageBox.Show("Hello " + name_Input.Text + "," + " you are : " + age_Input.Text + " years old. " + "\r\n"
-               + "Your contact number is " + contact_Input.Text + " and your address is " + address_Input.Text + "\r\n" +
+                MessageBox.Show("Response recorded" + "\r\n" + "Hello " + lbl_nameInput.Text + "," + " you are : " + lbl_ageInput.Text + " years old. " + "\r\n"
+               + "Your contact number is " + lbl_contactNoInput.Text + " and your address is " + lbl_addressInput.Text + "\r\n" +
                  "You have not been in contact with others.");
+            }
+        }
+        public void InfoConfirmation()
+        {
+            if (lbl_nameInput.Text.Length == 0)
+            {
+                MessageBox.Show("Insufficient information provided, please fill out all fields!");
+            }
+            else if (lbl_ageInput.Text.Length == 0)
+            {
+                MessageBox.Show("Insufficient information provided, please fill out all fields!");
+            }
+            else if (lbl_contactNoInput.Text.Length == 0)
+            {
+                MessageBox.Show("Insufficient information provided, please fill out all fields!");
+            }
+            else if (lbl_addressInput.Text.Length == 0)
+            {
+                MessageBox.Show("Insufficient information provided, please fill out all fields!");
+            }
+            else if (lbl_HadContactInput.Text.Length == 0)
+            {
+                MessageBox.Show("Insufficient information provided, please fill out all fields!");
             }
         }
 
         public Form1()
         {
             InitializeComponent();
-        }
-        
-        private void OK_button_Click(object sender, EventArgs e)
-        {
-            if (counter == 1)
-            {
-                name_Input.Text = information_TextBox.Text;
-            }
-            else if (counter == 2)
-            {
-                age_Input.Text = information_TextBox.Text;
-            }
-            else if (counter == 3)
-            {
-                contact_Input.Text = information_TextBox.Text;
-            }
-            else if (counter == 4)
-            { 
-                address_Input.Text = information_TextBox.Text; 
-            }
-            else
-            {
-                incontact_Input.Text = information_TextBox.Text;
-            }
-           counter++;
         }
 
         private void name_Input_Click(object sender, EventArgs e)
@@ -78,57 +81,66 @@ namespace ContactTracing
 
         private void address_Input_Click(object sender, EventArgs e)
         {
-            
+
+        }
+
+        private void OK_button_Click(object sender, EventArgs e)
+        {
+            if (counter == 1)
+            {
+                lbl_nameInput.Text = txtBox_Input.Text;
+            }
+            else if (counter == 2)
+            {
+                lbl_ageInput.Text = txtBox_Input.Text;
+            }
+            else if (counter == 3)
+            {
+                lbl_contactNoInput.Text = txtBox_Input.Text;
+            }
+            else if (counter == 4)
+            {
+                lbl_addressInput.Text = txtBox_Input.Text; 
+            }
+            else if (counter == 5)
+            {
+                lbl_HadContactInput.Text = txtBox_Input.Text;
+            }
+            else if (counter == 6)
+            {
+                lbl_contactCounterInput.Text = txtBox_Input.Text;
+            }
+            counter++;
         }
 
         private void clear_Button_Click(object sender, EventArgs e)
         {
             counter = 1;
 
-            name_Input.Text = "";
-            age_Input.Text = "" ;
-            contact_Input.Text = "";
-            address_Input.Text = "";
-            incontact_Input.Text = "";
-            information_TextBox.Text = "";
-        }
+            lbl_nameInput.Text = "";
+            lbl_ageInput.Text = "";
+            lbl_contactNoInput.Text = "";
+            lbl_addressInput.Text = "";
+            lbl_HadContactInput.Text = "";
+            lbl_contactCounterInput.Text = "";
+            txtBox_Input.Text = "";
 
-        public void infoConfirmation()
-        {
-            if (name_Input.Text.Length == 0)
-            {
-                MessageBox.Show("Insufficient information provided, please fill out all fields!");
-            }
-            else if (age_Input.Text.Length == 0)
-            {
-                MessageBox.Show("Insufficient information provided, please fill out all fields!");
-            }
-            else if (contact_Input.Text.Length == 0)
-            {
-                MessageBox.Show("Insufficient information provided, please fill out all fields!");
-            }
-            else if (address_Input.Text.Length == 0)
-            {
-                MessageBox.Show("Insufficient information provided, please fill out all fields!");
-            }
-            else if (incontact_Input.Text.Length == 0)
-            {
-                MessageBox.Show("Insufficient information provided, please fill out all fields!");
-            }
+            MessageBox.Show("The Form has now been cleared.");
         }
 
         private void confirm_Button_Click(object sender, EventArgs e)
         {
             checkContact();
-            infoConfirmation();
+            InfoConfirmation();
 
             StreamWriter outputFile;
             outputFile = File.AppendText("output.txt");
-            outputFile.WriteLine("Name: " + name_Input.Text);
-            outputFile.WriteLine("Age: " + age_Input.Text);
-            outputFile.WriteLine("Contact number: " + contact_Input.Text);
-            outputFile.WriteLine("Addess:" + address_Input.Text);
-            outputFile.WriteLine("Has been in contact with other people:" + incontact_Input.Text);
+            outputFile.WriteLine("Name: " + lbl_nameInput.Text);
+            outputFile.WriteLine("Age: " + lbl_ageInput.Text);
+            outputFile.WriteLine("Contact number: " + lbl_contactNoInput.Text);
+            outputFile.WriteLine("Addess:" + lbl_addressInput.Text);
+            outputFile.WriteLine("Has been in contact with other people: " + lbl_HadContactInput.Text);
+            outputFile.WriteLine("Number of contacts and where: " + lbl_contactCounterInput.Text);
             outputFile.Close();
         }
 
@@ -138,13 +150,9 @@ namespace ContactTracing
                 + "Clear - deletes all text on fields" + "\r\n" + "Confirm - confirms all information added" + "\r\n");
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void exit_Button_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("The application will now close.");
             Application.Exit();
         }
     }

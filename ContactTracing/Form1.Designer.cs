@@ -29,89 +29,91 @@ namespace ContactTracing
         /// </summary>
         private void InitializeComponent()
         {
-            this.info_Label = new System.Windows.Forms.Label();
-            this.name_Label = new System.Windows.Forms.Label();
-            this.age_Label = new System.Windows.Forms.Label();
-            this.contact_Label = new System.Windows.Forms.Label();
-            this.address_Label = new System.Windows.Forms.Label();
-            this.title_label = new System.Windows.Forms.Label();
+            this.lbl2 = new System.Windows.Forms.Label();
+            this.lbl_Name = new System.Windows.Forms.Label();
+            this.lbl_Age = new System.Windows.Forms.Label();
+            this.lbl_ContactNo = new System.Windows.Forms.Label();
+            this.lbl_Address = new System.Windows.Forms.Label();
+            this.lbl1 = new System.Windows.Forms.Label();
             this.OK_button = new System.Windows.Forms.Button();
-            this.information_TextBox = new System.Windows.Forms.TextBox();
-            this.name_Input = new System.Windows.Forms.Label();
-            this.age_Input = new System.Windows.Forms.Label();
-            this.contact_Input = new System.Windows.Forms.Label();
-            this.address_Input = new System.Windows.Forms.Label();
+            this.txtBox_Input = new System.Windows.Forms.TextBox();
+            this.lbl_nameInput = new System.Windows.Forms.Label();
+            this.lbl_ageInput = new System.Windows.Forms.Label();
+            this.lbl_contactNoInput = new System.Windows.Forms.Label();
+            this.lbl_addressInput = new System.Windows.Forms.Label();
             this.clear_Button = new System.Windows.Forms.Button();
             this.confirm_Button = new System.Windows.Forms.Button();
-            this.incontact_Label = new System.Windows.Forms.Label();
-            this.incontact_Input = new System.Windows.Forms.Label();
+            this.lbl_HadContact = new System.Windows.Forms.Label();
+            this.lbl_HadContactInput = new System.Windows.Forms.Label();
             this.help_Button = new System.Windows.Forms.Button();
             this.pnl1 = new System.Windows.Forms.Panel();
             this.pnl2 = new System.Windows.Forms.Panel();
             this.exit_Button = new System.Windows.Forms.Button();
+            this.lbl_contactCounter = new System.Windows.Forms.Label();
+            this.lbl_contactCounterInput = new System.Windows.Forms.Label();
             this.pnl1.SuspendLayout();
             this.pnl2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // info_Label
+            // lbl2
             // 
-            this.info_Label.AutoSize = true;
-            this.info_Label.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.info_Label.Location = new System.Drawing.Point(3, 123);
-            this.info_Label.Name = "info_Label";
-            this.info_Label.Size = new System.Drawing.Size(206, 32);
-            this.info_Label.TabIndex = 0;
-            this.info_Label.Text = "Enter Information:";
+            this.lbl2.AutoSize = true;
+            this.lbl2.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl2.Location = new System.Drawing.Point(12, 88);
+            this.lbl2.Name = "lbl2";
+            this.lbl2.Size = new System.Drawing.Size(181, 30);
+            this.lbl2.TabIndex = 0;
+            this.lbl2.Text = "Enter Information:";
             // 
-            // name_Label
+            // lbl_Name
             // 
-            this.name_Label.AutoSize = true;
-            this.name_Label.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.name_Label.Location = new System.Drawing.Point(9, 162);
-            this.name_Label.Name = "name_Label";
-            this.name_Label.Size = new System.Drawing.Size(66, 25);
-            this.name_Label.TabIndex = 1;
-            this.name_Label.Text = "Name:";
+            this.lbl_Name.AutoSize = true;
+            this.lbl_Name.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_Name.Location = new System.Drawing.Point(18, 127);
+            this.lbl_Name.Name = "lbl_Name";
+            this.lbl_Name.Size = new System.Drawing.Size(55, 21);
+            this.lbl_Name.TabIndex = 1;
+            this.lbl_Name.Text = "Name:";
             // 
-            // age_Label
+            // lbl_Age
             // 
-            this.age_Label.AutoSize = true;
-            this.age_Label.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.age_Label.Location = new System.Drawing.Point(9, 188);
-            this.age_Label.Name = "age_Label";
-            this.age_Label.Size = new System.Drawing.Size(49, 25);
-            this.age_Label.TabIndex = 2;
-            this.age_Label.Text = "Age:";
+            this.lbl_Age.AutoSize = true;
+            this.lbl_Age.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_Age.Location = new System.Drawing.Point(18, 153);
+            this.lbl_Age.Name = "lbl_Age";
+            this.lbl_Age.Size = new System.Drawing.Size(40, 21);
+            this.lbl_Age.TabIndex = 2;
+            this.lbl_Age.Text = "Age:";
             // 
-            // contact_Label
+            // lbl_ContactNo
             // 
-            this.contact_Label.AutoSize = true;
-            this.contact_Label.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.contact_Label.Location = new System.Drawing.Point(8, 215);
-            this.contact_Label.Name = "contact_Label";
-            this.contact_Label.Size = new System.Drawing.Size(155, 25);
-            this.contact_Label.TabIndex = 3;
-            this.contact_Label.Text = "Contact Number:";
+            this.lbl_ContactNo.AutoSize = true;
+            this.lbl_ContactNo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_ContactNo.Location = new System.Drawing.Point(17, 180);
+            this.lbl_ContactNo.Name = "lbl_ContactNo";
+            this.lbl_ContactNo.Size = new System.Drawing.Size(128, 21);
+            this.lbl_ContactNo.TabIndex = 3;
+            this.lbl_ContactNo.Text = "Contact Number:";
             // 
-            // address_Label
+            // lbl_Address
             // 
-            this.address_Label.AutoSize = true;
-            this.address_Label.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.address_Label.Location = new System.Drawing.Point(9, 244);
-            this.address_Label.Name = "address_Label";
-            this.address_Label.Size = new System.Drawing.Size(83, 25);
-            this.address_Label.TabIndex = 4;
-            this.address_Label.Text = "Address:";
+            this.lbl_Address.AutoSize = true;
+            this.lbl_Address.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_Address.Location = new System.Drawing.Point(18, 209);
+            this.lbl_Address.Name = "lbl_Address";
+            this.lbl_Address.Size = new System.Drawing.Size(69, 21);
+            this.lbl_Address.TabIndex = 4;
+            this.lbl_Address.Text = "Address:";
             // 
-            // title_label
+            // lbl1
             // 
-            this.title_label.AutoSize = true;
-            this.title_label.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.title_label.Location = new System.Drawing.Point(7, 20);
-            this.title_label.Name = "title_label";
-            this.title_label.Size = new System.Drawing.Size(308, 45);
-            this.title_label.TabIndex = 5;
-            this.title_label.Text = "Contact Tracing App";
+            this.lbl1.AutoSize = true;
+            this.lbl1.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl1.Location = new System.Drawing.Point(3, 13);
+            this.lbl1.Name = "lbl1";
+            this.lbl1.Size = new System.Drawing.Size(308, 45);
+            this.lbl1.TabIndex = 5;
+            this.lbl1.Text = "Contact Tracing App";
             // 
             // OK_button
             // 
@@ -123,56 +125,56 @@ namespace ContactTracing
             this.OK_button.UseVisualStyleBackColor = true;
             this.OK_button.Click += new System.EventHandler(this.OK_button_Click);
             // 
-            // information_TextBox
+            // txtBox_Input
             // 
-            this.information_TextBox.Location = new System.Drawing.Point(91, 14);
-            this.information_TextBox.Name = "information_TextBox";
-            this.information_TextBox.Size = new System.Drawing.Size(239, 25);
-            this.information_TextBox.TabIndex = 7;
+            this.txtBox_Input.Location = new System.Drawing.Point(91, 14);
+            this.txtBox_Input.Name = "txtBox_Input";
+            this.txtBox_Input.Size = new System.Drawing.Size(239, 25);
+            this.txtBox_Input.TabIndex = 7;
             // 
-            // name_Input
+            // lbl_nameInput
             // 
-            this.name_Input.AutoSize = true;
-            this.name_Input.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.name_Input.ForeColor = System.Drawing.Color.Lime;
-            this.name_Input.Location = new System.Drawing.Point(193, 163);
-            this.name_Input.Name = "name_Input";
-            this.name_Input.Size = new System.Drawing.Size(0, 25);
-            this.name_Input.TabIndex = 8;
-            this.name_Input.Click += new System.EventHandler(this.name_Input_Click);
+            this.lbl_nameInput.AutoSize = true;
+            this.lbl_nameInput.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_nameInput.ForeColor = System.Drawing.Color.Lime;
+            this.lbl_nameInput.Location = new System.Drawing.Point(458, 128);
+            this.lbl_nameInput.Name = "lbl_nameInput";
+            this.lbl_nameInput.Size = new System.Drawing.Size(0, 25);
+            this.lbl_nameInput.TabIndex = 8;
+            this.lbl_nameInput.Click += new System.EventHandler(this.name_Input_Click);
             // 
-            // age_Input
+            // lbl_ageInput
             // 
-            this.age_Input.AutoSize = true;
-            this.age_Input.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.age_Input.ForeColor = System.Drawing.Color.Lime;
-            this.age_Input.Location = new System.Drawing.Point(193, 188);
-            this.age_Input.Name = "age_Input";
-            this.age_Input.Size = new System.Drawing.Size(0, 25);
-            this.age_Input.TabIndex = 9;
-            this.age_Input.Click += new System.EventHandler(this.age_Input_Click);
+            this.lbl_ageInput.AutoSize = true;
+            this.lbl_ageInput.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_ageInput.ForeColor = System.Drawing.Color.Lime;
+            this.lbl_ageInput.Location = new System.Drawing.Point(458, 153);
+            this.lbl_ageInput.Name = "lbl_ageInput";
+            this.lbl_ageInput.Size = new System.Drawing.Size(0, 25);
+            this.lbl_ageInput.TabIndex = 9;
+            this.lbl_ageInput.Click += new System.EventHandler(this.age_Input_Click);
             // 
-            // contact_Input
+            // lbl_contactNoInput
             // 
-            this.contact_Input.AutoSize = true;
-            this.contact_Input.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.contact_Input.ForeColor = System.Drawing.Color.Lime;
-            this.contact_Input.Location = new System.Drawing.Point(193, 215);
-            this.contact_Input.Name = "contact_Input";
-            this.contact_Input.Size = new System.Drawing.Size(0, 25);
-            this.contact_Input.TabIndex = 10;
-            this.contact_Input.Click += new System.EventHandler(this.contact_Input_Click);
+            this.lbl_contactNoInput.AutoSize = true;
+            this.lbl_contactNoInput.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_contactNoInput.ForeColor = System.Drawing.Color.Lime;
+            this.lbl_contactNoInput.Location = new System.Drawing.Point(458, 180);
+            this.lbl_contactNoInput.Name = "lbl_contactNoInput";
+            this.lbl_contactNoInput.Size = new System.Drawing.Size(0, 25);
+            this.lbl_contactNoInput.TabIndex = 10;
+            this.lbl_contactNoInput.Click += new System.EventHandler(this.contact_Input_Click);
             // 
-            // address_Input
+            // lbl_addressInput
             // 
-            this.address_Input.AutoSize = true;
-            this.address_Input.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.address_Input.ForeColor = System.Drawing.Color.Lime;
-            this.address_Input.Location = new System.Drawing.Point(193, 244);
-            this.address_Input.Name = "address_Input";
-            this.address_Input.Size = new System.Drawing.Size(0, 25);
-            this.address_Input.TabIndex = 11;
-            this.address_Input.Click += new System.EventHandler(this.address_Input_Click);
+            this.lbl_addressInput.AutoSize = true;
+            this.lbl_addressInput.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_addressInput.ForeColor = System.Drawing.Color.Lime;
+            this.lbl_addressInput.Location = new System.Drawing.Point(458, 209);
+            this.lbl_addressInput.Name = "lbl_addressInput";
+            this.lbl_addressInput.Size = new System.Drawing.Size(0, 25);
+            this.lbl_addressInput.TabIndex = 11;
+            this.lbl_addressInput.Click += new System.EventHandler(this.address_Input_Click);
             // 
             // clear_Button
             // 
@@ -194,26 +196,26 @@ namespace ContactTracing
             this.confirm_Button.UseVisualStyleBackColor = true;
             this.confirm_Button.Click += new System.EventHandler(this.confirm_Button_Click);
             // 
-            // incontact_Label
+            // lbl_HadContact
             // 
-            this.incontact_Label.AutoSize = true;
-            this.incontact_Label.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.incontact_Label.Location = new System.Drawing.Point(9, 269);
-            this.incontact_Label.Name = "incontact_Label";
-            this.incontact_Label.Size = new System.Drawing.Size(468, 25);
-            this.incontact_Label.TabIndex = 14;
-            this.incontact_Label.Text = "Have you been in contact with other people?: (Yes/No)";
+            this.lbl_HadContact.AutoSize = true;
+            this.lbl_HadContact.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_HadContact.Location = new System.Drawing.Point(18, 234);
+            this.lbl_HadContact.Name = "lbl_HadContact";
+            this.lbl_HadContact.Size = new System.Drawing.Size(384, 21);
+            this.lbl_HadContact.TabIndex = 14;
+            this.lbl_HadContact.Text = "Have you been in contact with other people?: (Yes/No)";
             // 
-            // incontact_Input
+            // lbl_HadContactInput
             // 
-            this.incontact_Input.AutoSize = true;
-            this.incontact_Input.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.incontact_Input.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.incontact_Input.ForeColor = System.Drawing.Color.Lime;
-            this.incontact_Input.Location = new System.Drawing.Point(479, 269);
-            this.incontact_Input.Name = "incontact_Input";
-            this.incontact_Input.Size = new System.Drawing.Size(0, 25);
-            this.incontact_Input.TabIndex = 15;
+            this.lbl_HadContactInput.AutoSize = true;
+            this.lbl_HadContactInput.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lbl_HadContactInput.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_HadContactInput.ForeColor = System.Drawing.Color.Lime;
+            this.lbl_HadContactInput.Location = new System.Drawing.Point(458, 234);
+            this.lbl_HadContactInput.Name = "lbl_HadContactInput";
+            this.lbl_HadContactInput.Size = new System.Drawing.Size(0, 25);
+            this.lbl_HadContactInput.TabIndex = 15;
             // 
             // help_Button
             // 
@@ -229,10 +231,10 @@ namespace ContactTracing
             // 
             this.pnl1.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.pnl1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pnl1.Controls.Add(this.title_label);
-            this.pnl1.Location = new System.Drawing.Point(81, 12);
+            this.pnl1.Controls.Add(this.lbl1);
+            this.pnl1.Location = new System.Drawing.Point(177, 12);
             this.pnl1.Name = "pnl1";
-            this.pnl1.Size = new System.Drawing.Size(322, 100);
+            this.pnl1.Size = new System.Drawing.Size(318, 73);
             this.pnl1.TabIndex = 17;
             // 
             // pnl2
@@ -240,12 +242,12 @@ namespace ContactTracing
             this.pnl2.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.pnl2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pnl2.Controls.Add(this.exit_Button);
-            this.pnl2.Controls.Add(this.information_TextBox);
+            this.pnl2.Controls.Add(this.txtBox_Input);
             this.pnl2.Controls.Add(this.OK_button);
             this.pnl2.Controls.Add(this.help_Button);
             this.pnl2.Controls.Add(this.clear_Button);
             this.pnl2.Controls.Add(this.confirm_Button);
-            this.pnl2.Location = new System.Drawing.Point(34, 297);
+            this.pnl2.Location = new System.Drawing.Point(117, 299);
             this.pnl2.Name = "pnl2";
             this.pnl2.Size = new System.Drawing.Size(424, 83);
             this.pnl2.TabIndex = 18;
@@ -260,25 +262,47 @@ namespace ContactTracing
             this.exit_Button.UseVisualStyleBackColor = true;
             this.exit_Button.Click += new System.EventHandler(this.exit_Button_Click);
             // 
+            // lbl_contactCounter
+            // 
+            this.lbl_contactCounter.AutoSize = true;
+            this.lbl_contactCounter.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_contactCounter.Location = new System.Drawing.Point(18, 265);
+            this.lbl_contactCounter.Name = "lbl_contactCounter";
+            this.lbl_contactCounter.Size = new System.Drawing.Size(346, 21);
+            this.lbl_contactCounter.TabIndex = 19;
+            this.lbl_contactCounter.Text = "If yes, how many and where? If no, leave it blank.";
+            // 
+            // lbl_contactCounterInput
+            // 
+            this.lbl_contactCounterInput.AutoSize = true;
+            this.lbl_contactCounterInput.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_contactCounterInput.ForeColor = System.Drawing.Color.Lime;
+            this.lbl_contactCounterInput.Location = new System.Drawing.Point(458, 265);
+            this.lbl_contactCounterInput.Name = "lbl_contactCounterInput";
+            this.lbl_contactCounterInput.Size = new System.Drawing.Size(0, 25);
+            this.lbl_contactCounterInput.TabIndex = 20;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(535, 394);
+            this.ClientSize = new System.Drawing.Size(690, 394);
+            this.Controls.Add(this.lbl_contactCounterInput);
+            this.Controls.Add(this.lbl_contactCounter);
             this.Controls.Add(this.pnl2);
             this.Controls.Add(this.pnl1);
-            this.Controls.Add(this.incontact_Input);
-            this.Controls.Add(this.incontact_Label);
-            this.Controls.Add(this.address_Input);
-            this.Controls.Add(this.contact_Input);
-            this.Controls.Add(this.age_Input);
-            this.Controls.Add(this.name_Input);
-            this.Controls.Add(this.address_Label);
-            this.Controls.Add(this.contact_Label);
-            this.Controls.Add(this.age_Label);
-            this.Controls.Add(this.name_Label);
-            this.Controls.Add(this.info_Label);
+            this.Controls.Add(this.lbl_HadContactInput);
+            this.Controls.Add(this.lbl_HadContact);
+            this.Controls.Add(this.lbl_addressInput);
+            this.Controls.Add(this.lbl_contactNoInput);
+            this.Controls.Add(this.lbl_ageInput);
+            this.Controls.Add(this.lbl_nameInput);
+            this.Controls.Add(this.lbl_Address);
+            this.Controls.Add(this.lbl_ContactNo);
+            this.Controls.Add(this.lbl_Age);
+            this.Controls.Add(this.lbl_Name);
+            this.Controls.Add(this.lbl2);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Contact Tracing App";
@@ -294,26 +318,28 @@ namespace ContactTracing
 
         #endregion
 
-        private System.Windows.Forms.Label info_Label;
-        private System.Windows.Forms.Label name_Label;
-        private System.Windows.Forms.Label age_Label;
-        private System.Windows.Forms.Label contact_Label;
-        private System.Windows.Forms.Label address_Label;
-        private System.Windows.Forms.Label title_label;
+        private System.Windows.Forms.Label lbl2;
+        private System.Windows.Forms.Label lbl_Name;
+        private System.Windows.Forms.Label lbl_Age;
+        private System.Windows.Forms.Label lbl_ContactNo;
+        private System.Windows.Forms.Label lbl_Address;
+        private System.Windows.Forms.Label lbl1;
         private System.Windows.Forms.Button OK_button;
-        private System.Windows.Forms.TextBox information_TextBox;
-        private System.Windows.Forms.Label name_Input;
-        private System.Windows.Forms.Label age_Input;
-        private System.Windows.Forms.Label contact_Input;
-        private System.Windows.Forms.Label address_Input;
+        private System.Windows.Forms.TextBox txtBox_Input;
+        private System.Windows.Forms.Label lbl_nameInput;
+        private System.Windows.Forms.Label lbl_ageInput;
+        private System.Windows.Forms.Label lbl_contactNoInput;
+        private System.Windows.Forms.Label lbl_addressInput;
         private System.Windows.Forms.Button clear_Button;
         private System.Windows.Forms.Button confirm_Button;
-        private System.Windows.Forms.Label incontact_Label;
-        private System.Windows.Forms.Label incontact_Input;
+        private System.Windows.Forms.Label lbl_HadContact;
+        private System.Windows.Forms.Label lbl_HadContactInput;
         private System.Windows.Forms.Button help_Button;
         private System.Windows.Forms.Panel pnl1;
         private System.Windows.Forms.Panel pnl2;
         private System.Windows.Forms.Button exit_Button;
+        private System.Windows.Forms.Label lbl_contactCounter;
+        private System.Windows.Forms.Label lbl_contactCounterInput;
     }
 }
 
